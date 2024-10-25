@@ -6,14 +6,13 @@ const Bottle = ({ bottle, selectHandle }) => {
   return (
     <div className=" bottle-cart">
       <div>
-        <img className="img" src={img} alt="Bottle" width="250" />
+        <img className="img" src={img} alt="Bottle" />
       </div>
       <div className="btl">
         <h3>Bottle Name :{name}</h3>
-        <h3>seller : {seller}</h3>
+
         <h4>Price : {price}</h4>
-        <h4>stock :{stock} </h4>
-        <h4>ratings : {ratings}</h4>
+
         <button className="btn" onClick={() => selectHandle(bottle)}>
           Buy now!
         </button>
